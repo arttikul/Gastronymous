@@ -73,8 +73,8 @@ a{
   color: #278f7f;
 }
 
-.container-mobile{
-  width: 92%;
+.container{
+  width: 100%;
   margin: 0 auto;;
   display: table;
 
@@ -166,7 +166,7 @@ a{
 												search
 ==========================================================*/
 .search{
-  margin: 25px 0 0 0;
+  margin: 25px 0 20px 0;
 }
 .input-wrapper{
   display: inline;
@@ -565,9 +565,87 @@ footer .footer-social a:first-child{
 	margin: 0 5px 20px 0;
 }
 
+/*============================================================================
+															@media Tablets
+============================================================================*/
+@media screen and (min-width:768px){
+
+	.container{
+		width:760px;
+		/*border: 1px solid #444;*/
+		display: block;
+	}
+
+	/*============================================================================
+										header
+	============================================================================*/
+	.hot-news{
+		float: left;
+		display: block;
+		width:245px;
+	}
+	.logo{
+		float: left;
+		margin: 0 0 30px 0;
+	}
+	.logo h1{
+		margin: 10px 0 0 5px;
+	}
+	.search{
+		float: left;
+		margin: 45px 0 20px 15px;
+	}
+	.search input[type="submit"]{
+		top:-3px;
+	}
+}
+/*============================================================
+									navbar
+============================================================*/
+nav{
+	position:static;
+	background: url("../img/navbar_bg.png")20px -20px repeat-x;
+}
+.hamburger{
+	margin: 0;
+	padding: 15px;
+	box-shadow: 0 3px 10px 0 black;
+	position: relative;
+	z-index: 100;
+}
+.line{
+	border-color: rgba(138, 99, 53, 0.67);
+	box-shadow: 01px 1px 0 rgba(255, 255, 255, 0.17), inset 1px 1px 1px rgba(0, 0, 1, 0.15);
+}
+
+.menu{
+	background-color: #fff;
+	position: relative;
+}
+.menu li{
+	background: #c29b6e;
+	box-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.17), inset 0.5px 0.9px 1px rgba(0, 0, 1, 0.15);
+}
+.menu li a{
+	color:#85391b;
+	border-bottom: 1px solid rgba(138, 99, 53, 0.67);
+}
+.menu li:first-child a{
+	border-top: none;
+}
+.menu li a:hover{
+	background: rgba(138, 99, 53, 0.67);
+	color:#d4d4d4;
+}
 
 
 
+
+
+
+.pictures header{
+	margin-top: 0;
+}
 
 /*====================================================
 												clearfix
