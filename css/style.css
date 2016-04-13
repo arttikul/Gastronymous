@@ -41,9 +41,6 @@
 body{
   font:  12px/1.5 'Georgia';
 	color: #9c8c6a;
-	/*font-size: 12px;*/
-	/*line-height: 15px;*/
-	/*font-size-adjust:0;*/
   background: url("../img/header_gradient.png") repeat-x ,
               url("../img/main_bg.jpg");
 }
@@ -171,7 +168,7 @@ a{
 .search{
   margin: 25px 0 0 0;
 }
-.search-wrapper{
+.input-wrapper{
   display: inline;
   position:relative;
 }
@@ -185,14 +182,16 @@ input[type="email"]{
   font-style: italic;
   padding: 0px 30px 0px 15px;
   outline: 0;
+
 }
-.search input[type="submit"]{
+.search input[type="submit"],
+.subscribe input[type="submit"]{
   background: none;
   border: none;
   font-family: 'FontAwesome';
   color: #898989;
   position: absolute;
-  right: 3px;
+  right: 5px;
 }
 
 .hot-news:after,
@@ -246,6 +245,9 @@ nav li a{
 	display: block;
 	padding: 10px 0;
 	border-bottom: 1px solid #e0f4f1;
+}
+nav li a:hover{
+	background-color: #fff;
 }
 nav li:first-child a{
 	border-top: 1px solid #e0f4f1;
@@ -384,7 +386,7 @@ footer .facebook {
   float: left;
 }
 .facebook{
-  margin-right: 20px;
+  /*margin-right: 20px;*/
 }
 .container .comments-link{
   margin: 0;
@@ -443,6 +445,26 @@ footer .facebook {
 	width: 92%;
 	margin: 0 auto;
 }
+.table-videos{
+	-webkit-border-radius: 5px;
+		 -moz-border-radius: 5px;
+					border-radius: 5px;
+					overflow: hidden;
+}
+.table-videos a{
+	display: inline-block;
+	position: relative;
+}
+.table-videos a:hover:after{
+	content: "";
+	width: 39px;
+	height: 39px;
+	display: block;
+	border:4px solid #3bc0ac;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
 
 /*=======================================================
 												sidebar
@@ -459,23 +481,14 @@ footer .facebook {
 .vote-form{
 	display: none;
 }
-input[type="email"]{
+.subscribe h2{
+	display: block;
+}
+.subscribe input[type="email"]{
 	background-color: #f4ebd8;
-	color:#a28d62;
 }
 .subscribe input[type="submit"]{
-	background: none;
-  border: none;
-  font-family: 'FontAwesome';
-  color: #898989;
-  position: absolute;
-  right: 3px;
-	top:-3px;
-}
-.subscribe label{
-	/*display: block;*/
-	position: relative;
-	margin: 0 0 0 5px;
+	color:#a28d62;
 }
 .sidebar-social{
 	margin: 15px 0 0;
@@ -484,9 +497,73 @@ input[type="email"]{
 .sidebar-social a{
 	display: inline-block;
 	margin: 0 0 0 5px;
+	position: relative;
+}
+.sidebar-social a:hover:after{
+  position: absolute;
+  content: "";
+  width: 30px;
+  height: 31px;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+}
+/*===============================================================
+													footer
+=================================================================*/
+
+footer .container{
+	background:url("../img/fotter_bg.jpg");
+}
+footer{
+  text-align: center;
+}
+footer .container{
+  margin-top: 0;
+  width: 100%;
 }
 
-
+footer .footer-logo{
+  float:none;
+  margin: 0 auto;
+	width: 175px;
+	text-align: center;
+	padding-top: 20px;
+}
+.footer-logo h4 {
+  text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.29);
+  color: white;
+	font:400 normal 34px/1 "LadyCopra";
+}
+footer .footer-logo p{
+  margin-bottom: 0;
+	text-shadow: 0.5px 0.9px 0 rgba(0, 0, 0, 0.22);
+  color: #ececec;
+}
+.footer-col{
+	margin-top: 20px;
+	text-align: center;
+}
+.footer-col a{
+	color: #9acac3;
+	text-decoration: underline;
+	font-size: 12px;
+}
+.footer-col a:hover{
+	text-decoration: none;
+}
+.footer-list{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+footer .footer-social{
+  width: 40px;
+  margin: 20px auto;
+}
+footer .footer-social a:first-child{
+	margin: 0 5px 20px 0;
+}
 
 
 
