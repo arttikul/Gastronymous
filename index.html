@@ -108,7 +108,7 @@
     </div>
     <section class="column-1">
       <div class="pictures">
-        <header class="clearfix">
+        <header>
           <h2>One Week In Pictures</h2>
           <a href="#">more pictures</a>
         </header>
@@ -159,15 +159,15 @@
           <h2>latest news</h2>
           <a href="#">more news</a>
         </header>
-        <article class="post">
+        <article class="post clearfix">
           <div class="post-img">
             <img src="img/post_img_01.jpg" alt="post_img">
           </div>
           <div class="post-content">
             <h3><a href="#">In Pompeii, 158 thermopolia with a service counter have been identified</a></h3>
-            <span>12 Jul, 2011 <i class="fa fa-circle dot"></i> from<a href="#">Jack Parker</a></span>
+            <span><time>12 Jul, 2011</time> <i class="fa fa-circle dot"></i> from<a href="#">Jack Parker</a></span>
             <p>Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing regions in the world. Italy is one of the world's foremost producers</p>
-            <div class="social">
+            <div class="social clearfix">
               <div class="social-wrapper clearfix">
                 <a href="#" class="comments-link">
                   <div class="comments"><span>12 comments</span></div>
@@ -185,15 +185,15 @@
             </div>
           </div>
         </article>
-        <article class="post">
+        <article class="post clearfix">
           <div class="post-img">
             <img src="img/post_img_02.jpg" alt="post_img">
           </div>
           <div class="post-content">
             <h3><a href="#">Food catering establishments which may be described</a></h3>
-            <span>12 Jul, 2011 <i class="fa fa-circle dot"></i> from<a href="#">Jack Parker</a></span>
+            <span><time>12 Jul, 2011</time> <i class="fa fa-circle dot"></i> from<a href="#">Jack Parker</a></span>
             <p>Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing regions in the world. Italy is one of the world's foremost producers</p>
-            <div class="social">
+            <div class="social clearfix">
               <div class="social-wrapper clearfix">
                 <a href="#" class="comments-link">
                   <div class="comments"><span>12 comments</span></div>
@@ -211,15 +211,15 @@
             </div>
           </div>
         </article>
-        <article class="post">
+        <article class="post clearfix">
           <div class="post-img">
             <img src="img/post_img_03.jpg" alt="post_img">
           </div>
           <div class="post-content">
             <h3><a href="#">Kaifeng was ripe for the development of restaurants</a></h3>
-            <span>12 Jul, 2011 <i class="fa fa-circle dot"></i> from<a href="#">Jack Parker</a></span>
+            <span><time>12 Jul, 2011</time> <i class="fa fa-circle dot"></i> from<a href="#">Jack Parker</a></span>
             <p>Italian wine is wine produced in Italy, a country which is home to some of the oldest wine-producing regions in the world. Italy is one of the world's foremost producers</p>
-            <div class="social">
+            <div class="social clearfix">
               <div class="social-wrapper clearfix">
                 <a href="#" class="comments-link">
                   <div class="comments"><span>12 comments</span></div>
@@ -277,7 +277,7 @@
         </div>
       </div>
     </section>
-    <aside class="column-2">
+    <aside class="column-2 clearfix">
       <header>
         <h2>interesting articles</h2>
         <a href="#">all</a>
@@ -296,7 +296,7 @@
         <a href="#">Best restaurnats in the World</a>
         <p>If you follow us on twitter (and if you don’t, you should), you may know that I’ve been making.</p>
       </div>
-      <header class="form-header">
+      <header class="form-header clearfix">
         <h2>Vote</h2>
         <p>What do you think about new Calvin Klein Summer 2011 Collection?</p>
       </header>
@@ -305,8 +305,9 @@
           <input id="interesting" type="radio" name="vote">
           <label for="interesting">It’s very interesting</label>
         </div>
-        <input id="not-bad" type="radio" name="vote">
-        <label for="not-bad">not bad</label>
+        <div class="field">
+          <input id="not-bad" type="radio" name="vote">
+          <label for="not-bad">not bad</label>
         </div>
         <div class="field">
           <input id="bad" type="radio" name="vote">
@@ -318,7 +319,7 @@
         </div>
         <div class="bottons">
           <input type="submit" value="vote">
-          <input type="submit" value="result">
+          <input type="button" value="result">
         </div>
       </form>
       <div class="subscribe">
