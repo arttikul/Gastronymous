@@ -404,6 +404,7 @@ footer .facebook {
      -moz-border-radius: 2px;
           border-radius: 2px;
 }
+
 .comments::before {
   content: " ";
   width: 10px;
@@ -428,6 +429,14 @@ footer .facebook {
   color: #a28d62;
   padding: 0 10px;
 }
+.comments:hover,
+.comments:hover:before {
+    background-color: #a28d62;
+
+	}
+	.comments:hover span{
+		color:#f0e3c8;
+	}
 .tags a,
 .sidebar-post a{
 	font-size: 12px;
@@ -476,6 +485,7 @@ footer .facebook {
 }
 .column-2 header{
 	text-align: left;
+	width:200px;
 }
 .form-header,
 .vote-form{
@@ -612,7 +622,7 @@ footer .footer-social a:first-child{
 	.hamburger{
 		margin: 0;
 		padding: 15px;
-		box-shadow: 0 3px 10px 0 black;
+		box-shadow: 0 0 10px 0px black;
 		position: relative;
 		z-index: 100;
 	}
@@ -624,6 +634,7 @@ footer .footer-social a:first-child{
 	.menu{
 		background-color: #fff;
 		position: relative;
+		box-shadow: 0 0 10px 0 black;
 	}
 	.menu li{
 		background: #c29b6e;
@@ -643,7 +654,9 @@ footer .footer-social a:first-child{
 /*=================================================================
 													main
 =================================================================*/
-
+	main{
+		box-shadow: 0 0 10px 0 black;
+	}
 	.slide{
 		display: block;
 		padding-top: 20px;
@@ -718,7 +731,7 @@ footer .footer-social a:first-child{
 }
 .sidebar-post{
 	float: left;
-	margin-left: 20px;
+	margin-right: 20px;
 }
 .sidebar-post p{
 	margin: 0;
@@ -779,10 +792,29 @@ footer .footer-social a:first-child{
 }
 .sidebar-social{
 	float: right;
-	margin-right: 110px;
+	margin: 15px 110px 40px 0;
 }
-
-
+/*==============================================================
+											footer
+==============================================================*/
+footer .container{
+	border-radius: 0px 0px 5px 5px;
+	-moz-border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+	margin-bottom: 40px;
+	box-shadow: 0 2px 10px 0 black;
+}
+footer .footer-logo{
+	float: left;
+	margin: 30px 50px 0 40px;
+}
+footer .footer-col{
+	float: left;
+	margin:40px 90px 40px 0;
+}
+footer .footer-col:last-child{
+	margin-right: 0;
+}
 
 }
 
