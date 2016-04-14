@@ -97,14 +97,18 @@
   </nav>
   <main class="container">
     <div class="slide">
-      <img src="img/slide_01.jpg" alt="slide_01">
+      <div id="slides">
+        <img src="img/slide_01.jpg" alt="slide_01">
+        <img src="img/slide_01.jpg" alt="slide_01">
+        <img src="img/slide_01.jpg" alt="slide_01">
+        <a class="prev slidesjs-previous slidesjs-navigation" href="#"><i class="fa fa-chevron-left"></i></a>
+        <a class="next slidesjs-next slidesjs-navigation" href="#"><i class="fa fa-chevron-right"></i></a>
+      </div>
       <div class="circle">
         <p>garry parkers restaurants</p>
         <hr>
         <p>The bloodied bodies lay stuffed and tangled in the back.</p>
       </div>
-      <a class="left-chevron" href="#"><i class="fa fa-chevron-left"></i></a>
-      <a class="right-chevron" href="#"><i class="fa fa-chevron-right"></i></a>
     </div>
     <section class="column-1">
       <div class="pictures">
@@ -376,6 +380,32 @@
   </footer>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/jquery.slides.min.js"></script>
+  <script>
+    $(function() {
+      $("#slides").slidesjs({
+        width: 760,
+        height: 187,
+        pagination: {
+          active: false,
+          // [boolean] Create pagination items.
+          // You cannot use your own pagination. Sorry.
+          effect: "slide"
+            // [string] Can be either "slide" or "fade".
+        },
+        navigation: {
+          active: false,
+          // [boolean] Generates next and previous buttons.
+          // You can set to false and use your own buttons.
+          // User defined buttons must have the following:
+          // previous button: class="slidesjs-previous slidesjs-navigation"
+          // next button: class="slidesjs-next slidesjs-navigation"
+          effect: "slide"
+            // [string] Can be either "slide" or "fade".
+        },
+      });
+    });
+  </script>
 </body>
 
 </html>
