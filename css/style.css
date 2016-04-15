@@ -845,9 +845,309 @@ footer .footer-col:last-child{
 }
 
 }
+/*=====================================================================
+										media for Desktop
+=====================================================================*/
+@media screen and (min-width:1027px) {
 
+	.container{
+		width:1027px;
+	}
+	.logo{
+		margin-left: 117px;
+	}
+	.hot-news{
+		width: 249px;
+		text-align: left;
+		margin: 0;
+	}
+	.search{
+		margin: 44px 6px 0 0;
+	}
+	.search input[type="search"]{
+		width: 211px;
+	}
+
+/*==========================================================
+									navbar
+==========================================================*/
+	nav{
+		max-width: none;
+		background: none;
+		position: relative;
+		/*z-index: 1000000;*/
+		-webkit-box-shadow: 0 13px 5px -10px black;
+			 -moz-box-shadow: 0 13px 5px -10px black;
+						box-shadow: 0 13px 5px -10px black;
+		/*overflow: hidden;*/
+	}
+	.hamburger{
+		display: none;
+	}
+
+	nav .gradient-left,
+	nav .gradient-right{
+	  position: absolute;
+	  height: 95px;
+		top:0;
+	}
+	nav .gradient-left{
+	  width: 32px;
+		background:url("../img/navbar_before.png") no-repeat;
+	}
+	nav .gradient-right{
+	  width: 43px;
+		right:0;
+		background: url("../img/navbar_after.png") no-repeat;
+	}
+	.menu{
+		display: block;
+		height: 90px;
+	  margin: 0 auto;
+	  padding-top: 5px;
+	  background: url("../img/navbar_bg.png") repeat-x;
+		background-position: 39px;
+		-webkit-box-shadow: 0 13px 5px -10px black;
+			 -moz-box-shadow: 0 13px 5px -10px black;
+						box-shadow: 0 13px 5px -10px black;
+		-webkit-border-radius: 7px;
+			 -moz-border-radius: 7px;
+						border-radius: 7px;
+
+	}
+
+	.menu li{
+		box-shadow: none;
+		background: none;
+		float: left;
+		width: auto;
+		margin:13px 10px 0 9px;
+		border:none;
+		display: block;
+		text-align: center;
+		/*clear: both;*/
+	}
+	.menu li:first-child {
+	  margin-left: 112px;
+	}
+	.menu li a{
+		border: none;
+		padding: 10px 14px;
+
+	}
+	.menu h3 {
+	  margin: 0;
+	  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.28);
+		font:400 19px/20px "GlasgowMedium";
+	  text-transform: uppercase;
+	  letter-spacing: 1.6px;
+	}
+	.menu span {
+		display:block;
+	  text-shadow: 0.5px 0.9px 0 rgba(255, 255, 255, 0.24);
+		font:italic 13px/18px "Georgia";
+	}
+
+
+
+	.menu a:hover {
+	  background-color: rgba(138, 99, 53, 0.67);
+	  -webkit-box-shadow: 0 0.9px 0 rgba(255, 255, 255, 0.17), inset 0 0.9px 0 rgba(0, 0, 1, 0.15);
+	     -moz-box-shadow: 0 0.9px 0 rgba(255, 255, 255, 0.17), inset 0 0.9px 0 rgba(0, 0, 1, 0.15);
+	          box-shadow: 0 0.9px 0 rgba(255, 255, 255, 0.17), inset 0 0.9px 0 rgba(0, 0, 1, 0.15);
+	  position: relative;
+	  color: #fff;
+	}
+	.menu a:hover::before {
+	  position: absolute;
+	  content: "";
+	  top: 0;
+	  left: -10px;
+	  border-bottom: 10px solid transparent;
+	  border-top: 10px solid transparent;
+	  border-right: 10px solid rgba(138, 99, 53, 0.67);
+	  width: 0;
+	  height: 40px;
+	  color: #fff;
+	}
+	.menu a:hover::after {
+	  position: absolute;
+	  content: "";
+	  top: 0;
+	  right: -10px;
+	  border-bottom: 10px solid transparent;
+	  border-top: 10px solid transparent;
+	  border-left: 10px solid rgba(138, 99, 53, 0.67);
+	  width: 0;
+	  height: 40px;
+	}
+	.menu .navbar-separator{
+		float: left;
+	  width: 2px;
+	  height: 60px;
+	  margin: 18px 0 0 0 ;
+	  background: -webkit-gradient( linear, left top, left bottom, from(transparent), color-stop(50%, #a7885e), color-stop(51%, #a7885e), to(transparent));
+	  background: -webkit-linear-gradient( transparent 0%, #a7885e 50%, #a7885e 51%, transparent 100%);
+	  background: -moz-linear-gradient( transparent 0%, #a7885e 50%, #a7885e 51%, transparent 100%);
+	  background: -o-linear-gradient( transparent 0%, #a7885e 50%, #a7885e 51%, transparent 100%);
+	  background: linear-gradient( transparent 0%, #a7885e 50%, #a7885e 51%, transparent 100%);
+	}
+
+/*========================================================
+												main
+========================================================*/
+	.main{
+		width:1000px;
+		position: relative;
+		/*z-index: 100;*/
+		/*overflow: hidden;*/
+	}
+	.main:before,
+	.main:after{
+	  content: "";
+	  width: 39px;
+	  height: 28px;
+	  background-color: #693512;
+	  -webkit-border-radius: 50%;
+	     -moz-border-radius: 50%;
+	          border-radius: 50%;
+	  position: absolute;
+	  z-index: -1;
+		top:-22px;
+	}
+	.main:after{
+	  right: -13px;
+	  /*bottom: -7px;*/
+	}
+	.main:before{
+	  left: -14px;
+	  /*bottom: -7px;*/
+	}
+	.slide{
+		width: 934px;
+		margin: 0 auto;
+	}
+	.slide .prev {
+	  left: -45px;
+	  top: 108px;
+	}
+	.slide .next {
+	  right: -45px;
+	  top: 119px;
+	}
+	.circle{
+	  width: 188px;
+	  height: 188px;
+		left: 391px;
+	  top: 45px;
+	}
+	.circle hr {
+	  width: 145px;
+	}
+	.circle p:first-child{
+		margin-top: 22px;
+		font-size: 15px;
+	}
+	.circle p:last-child{
+		width: 148px;
+		margin-left: 21px;
+	}
+	.column-1{
+		width: 705px;
+		float: left;
+	}
+	.pictures{
+		margin-left: 20px;
+	}
+	.pictures ul,
+	.post{
+		width: 647px;
+	}
+	.posts{
+		margin-left: 20px;
+	}
+	.posts header{
+		margin-left: 20px;
+	}
+	.post-img{
+		float: left;
+	}
+	.post-content{
+		float: left;
+		width: 390px;
+	}
+	.video-block{
+		width:430px;
+		height: 250px;
+		margin-left: 32px;
+		float: left;
+	}
+	.video-block header{
+		margin-left: 8px;
+	}
+	.more-videos {
+	  width: 204px;
+	  margin: 0 0 0 0;
+	  float: right;
+	}
+	.table-videos {
+		width:197px;
+	  overflow: hidden;
+	  margin-bottom: 20px;
+	  -webkit-border-radius: 12px;
+	     -moz-border-radius: 12px;
+	          border-radius: 12px;
+	}
+
+	.column-2{
+		  width: 270px;
+		float:left;
+		margin-left: 24px;
+	}
+	.column-2 header{
+		margin-left: 0;
+	}
+	.sidebar-post a{
+		display: block;
+		margin-bottom: 5px;
+	}
+	.sidebar-post p{
+		margin-bottom: 20px;
+	}
+	.form-header{
+		margin-top: 45px;
+	}
+	.vote-form{
+		margin-left: 0;
+	}
+	.vote-form .bottons{
+		margin-top: 30px;
+	}
+	.subscribe{
+		margin-top: 40px;
+	}
+	.sidebar-social{
+		float: left;
+	}
+	/*===============================================
+										footer
+	===============================================*/
+
+footer .container{
+	width:1000px;
+}
+footer .footer-col{
+	margin-left: 50px;
+}
+	/*footer:before{
+		content: "";
+		display: block;
+		height: 0;
+		clear: both;
+	}*/
+}
 /*====================================================
-												clearfix
+											clearfix
 =====================================================*/
 .clearfix:before,
 .clearfix:after {
